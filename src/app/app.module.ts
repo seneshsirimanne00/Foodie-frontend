@@ -9,6 +9,7 @@ import { SectionTwoComponent } from './landing-page/section-two/section-two.comp
 import { SectionThreeComponent } from './landing-page/section-three/section-three.component';
 import { SectionFourComponent } from './landing-page/section-four/section-four.component';
 import { SectionFiveComponent } from './landing-page/section-five/section-five.component';
+import { AppRoutingModule } from 'src/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SectionFiveComponent } from './landing-page/section-five/section-five.c
     SectionFiveComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
