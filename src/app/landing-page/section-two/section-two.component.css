@@ -1,0 +1,48 @@
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#right{
+    margin-right: 10vw;
+    margin-left: 5vw;
+}
+
+#left{
+    margin-left: 10vw;
+}
+
+h2{
+    font-size:70px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+#red{
+    color: #F54748;
+}
+
+#black{
+    margin-left: 0;
+}
+
+span{
+    display: flex;
+}
+
+p{
+    font-size:20px;
+    font-weight: 400;
+}
+
+#image{
+    margin-left: 30vw;
+    margin-top: 13vh;
+}
+
+.hand{
+    margin-top: 20vh;
+}
