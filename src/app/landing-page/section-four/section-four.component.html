@@ -1,1 +1,102 @@
-<p>section-four works!</p>
+<div id="container">
+    <div id='quiztop'>
+        <div id="topic"><div id="top"><h2 id="black">Let's take a</h2><h2 id="red">Quiz</h2><h2>to find</h2></div><div id="top"><h2 id="black">your</h2><h2 id="red">Preference ...</h2></div></div>
+        <div id="quizarr">
+        <img id="image" src="assets/la.png" alt="" (click) = "onLeftClick()">
+        <img id="image" src="assets/ra.png" alt="" (click) = "onRightClick()">
+    </div>
+    </div>
+    <div id="quizpart">
+    <div id="left">
+        <div id="btns" (click)="setNum(1)">
+            <p>Restaurant</p>
+        </div>
+        <div id="btns" (click)="setNum(2)">
+            <p>Number of people</p>
+        </div>
+        <div id="btns" (click)="setNum(3)">
+            <p>Dish</p>
+        </div>
+        <div id="btns" (click)="setNum(4)">
+            <p>Portion Size</p>
+        </div>
+        <div id="btns" (click)="setNum(5)">
+            <p>Reccomend</p>
+        </div>
+    </div>
+
+    <div id="right">
+        <div id="mid" *ngIf="num == 0">
+            <br><br>
+            <img src="assets/quizimg.png" alt="">
+            <h2>Start the quiz to ..........</h2>
+            <br><br><br>
+            <div id="btn" (click)="setNum(1)" >
+                <p>Start</p>
+            </div>
+        </div>
+        <div id="mid" *ngIf="num == 4">
+            <br><br><br><br>
+            <h2>What is your food potion size <br> Preference ?</h2>
+            <br><br><br>
+            <div id="midmid">
+                <img id="imgb" (click)="setNum(2)" src="assets/small.png" alt="">
+                <img id="imgb" (click)="setNum(2)" src="assets/medium.png" alt="">
+                <img id="imgb" (click)="setNum(2)" src="assets/large.png" alt="">
+            </div>
+        </div>
+        <div id="mid" *ngIf="num == 1">
+            <br><br><br><br>
+            <form action="/action_page.php">
+                <h3>Select the restaurant </h3>
+                <select name="cars" id="cars">
+                    <option value="volvo">The Embazzy</option>
+                    <option value="saab">The fab</option>
+                    <option value="mercedes">P & S</option>
+                    <option value="saab">Java Lounge</option>
+                    <option value="audi">McDonalds</option>
+                    <option value="audi">KFC</option>
+                  </select>
+              </form>
+        </div>
+        <div id="mid" *ngIf="num == 2">
+            <br><br><br><br>
+            <form action="/action_page.php">
+                <h3>Enter number of people</h3>
+                <input type="text" id="fname" name="fname"><br><br>
+                <h3>Enter the age range </h3>
+                <input type="tel" id="lname" name="lname"><br><br>
+              </form>
+        </div>
+        <div id="mid" *ngIf="num == 3">
+            <form action="/action_page.php">
+                <br><br><br><br><br><br>
+                <h3>Select the dish </h3>
+                <select name="cars" id="cars">
+                    <option value="volvo">Brownies</option>
+                    <option value="saab">Lassangna</option>
+                    <option value="mercedes">Cheese kotthu</option>
+                    <option value="saab">Fried Rice</option>
+                    <option value="audi">Cheese Burger</option>
+                    <option value="audi">Chicken wings</option>
+                </select>
+                <br><br>
+                <h4 id="link">+ Add a another Dish</h4>
+          </form>
+        </div>
+        <div id="mid" *ngIf="num == 5">
+            <form action="/action_page.php">
+                <br><br><br><br><br><br>
+                <h2>Foodie Reccomends you ....</h2>
+                <br>
+                <h3 id="red">3 portions</h3>
+                <br>
+                <h4>Selected Dish : Cheese Kotthu</h4>
+                <h4>Restaurant Name : The embazzy</h4>
+                <h4>Estimated price : Rs 2800.00</h4>
+                <br><br>
+          </form>
+        </div>
+    </div>
+</div>
+</div>
